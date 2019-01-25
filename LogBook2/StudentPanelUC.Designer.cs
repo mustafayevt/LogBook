@@ -46,6 +46,7 @@
             this.delCrys = new System.Windows.Forms.PictureBox();
             this.EnabledDisabledPanel = new MetroFramework.Controls.MetroPanel();
             this.StudentCommentTxtbx = new MetroFramework.Controls.MetroTextBox();
+            this.BigSizePic = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -55,6 +56,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.crys3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.delCrys)).BeginInit();
             this.EnabledDisabledPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BigSizePic)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -176,6 +178,8 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox3.TabIndex = 5;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.MouseEnter += new System.EventHandler(this.pictureBox3_MouseEnter);
+            this.pictureBox3.MouseLeave += new System.EventHandler(this.pictureBox3_MouseEnter);
             // 
             // HWCmbx
             // 
@@ -344,6 +348,18 @@
             this.StudentCommentTxtbx.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             this.StudentCommentTxtbx.TextChanged += new System.EventHandler(this.StudentCommentTxtbx_TextChanged);
             // 
+            // BigSizePic
+            // 
+            this.BigSizePic.Image = global::LogBook2.Properties.Resources.icons8_Person;
+            this.BigSizePic.Location = new System.Drawing.Point(54, 6);
+            this.BigSizePic.Name = "BigSizePic";
+            this.BigSizePic.Size = new System.Drawing.Size(50, 50);
+            this.BigSizePic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BigSizePic.TabIndex = 5;
+            this.BigSizePic.TabStop = false;
+            this.BigSizePic.Visible = false;
+            this.BigSizePic.MouseEnter += new System.EventHandler(this.pictureBox3_MouseEnter);
+            // 
             // StudentPanelUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -351,6 +367,7 @@
             this.Controls.Add(this.StudentCommentTxtbx);
             this.Controls.Add(this.EnabledDisabledPanel);
             this.Controls.Add(this.comment);
+            this.Controls.Add(this.BigSizePic);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.redRdbtn);
             this.Controls.Add(this.yellowRdbtn);
@@ -372,6 +389,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.delCrys)).EndInit();
             this.EnabledDisabledPanel.ResumeLayout(false);
             this.EnabledDisabledPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BigSizePic)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -397,5 +415,6 @@
         private System.Windows.Forms.PictureBox delCrys;
         private MetroFramework.Controls.MetroPanel EnabledDisabledPanel;
         private MetroFramework.Controls.MetroTextBox StudentCommentTxtbx;
+        private System.Windows.Forms.PictureBox BigSizePic;
     }
 }

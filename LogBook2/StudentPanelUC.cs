@@ -114,5 +114,10 @@ namespace LogBook2
         {
             StudentCommentTxtbx.Visible = !StudentCommentTxtbx.Visible;
         }
+
+        private void pictureBox3_MouseEnter(object sender, EventArgs e)
+        {
+            BigSizePic.Visible = !BigSizePic.Visible;
+        }
     }
 }
